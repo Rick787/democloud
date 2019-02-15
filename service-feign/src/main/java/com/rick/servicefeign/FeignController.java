@@ -15,7 +15,7 @@ public class FeignController {
     private FeignInterface feignInterface;
 
     @GetMapping("/hi")
-    public String hiFromFeign(@RequestParam(value = "name",defaultValue = "111") String name){
+    public String hiFromFeign(@RequestParam(value = "name",defaultValue = "123") String name){
         return feignInterface.SayHiFromClient(name + " | feign");
     }
 

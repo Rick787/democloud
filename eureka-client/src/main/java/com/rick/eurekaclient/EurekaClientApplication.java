@@ -34,6 +34,7 @@ public class EurekaClientApplication {
 
 	@RequestMapping("/hi")
 	public String home(@RequestParam(value = "name", defaultValue = "rick") String name) {
+		System.out.println(name + "| 来过");
 		return "hi " + name + " ,i am from port:" + port;
 	}
 
